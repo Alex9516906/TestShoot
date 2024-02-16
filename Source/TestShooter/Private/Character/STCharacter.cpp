@@ -70,8 +70,6 @@ ASTCharacter::ASTCharacter()
 void ASTCharacter::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Red, FString::Printf(TEXT("%s %s, name %s"),
-		HasAuthority() ? TEXT("Server:") : TEXT("Client:"), *GetName(), *GetPlayerName()));
 }
 
 void ASTCharacter::BeginPlay()
